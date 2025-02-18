@@ -1,0 +1,15 @@
+# workflow
+name: start sample
+on:
+    push:
+        branches: ['main']
+
+jobs:
+    build: 
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            name: start
+            run: echo hello this is my first action
+            shell: bash
+            
