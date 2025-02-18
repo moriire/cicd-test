@@ -11,7 +11,7 @@ jobs:
         - run: echo hello world
         - run: . ./shell.sh
           shell: bash
-        - uses: actions/setup-python
+        - uses: actions/setup-python@v4
         - run: pip install bs4
 
         
